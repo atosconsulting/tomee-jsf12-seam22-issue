@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html contentType="text/html" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+<head>
+<title>sM-Client Login</title>
+<link rel="shortcut icon" href="img/favicon.ico" />
+<meta content="no-store, no-cache" http-equiv="Cache-Control" />
+<meta content="no-cache" http-equiv="Pragma" />
+<meta content="-1" http-equiv="Expires" />
+<a4j:loadStyle src="resource:///stylesheet/theme.xcss" />
+<a4j:loadStyle src="/stylesheet/theme.css" />
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+            function forward(){
+                window.history.forward(1);
+            }
+            $j(document).ready(function(){
+                $j("#login\\:username").select().focus();
+                $j("#login\\:mandant").keypress(function(e) {
+						if(e.which == 13) {
+							$j("#login\\:loginButton").click();
+						}
+                });
+            });
+            
+        </script>
+</head>
+<body onload="forward()">
+	<div id="main">
+<!--		<ui:include src="layout/header.xhtml">
+			<ui:param name="projectName" value="sM-Client" />
+		</ui:include>-->
+		<div id="content">
+			<h:form id="login">
+
+				<rich:panel>
+					<f:facet name="header">#{messages['login.title']}</f:facet>
+
+
+
+					<div class="dialog">
+						<h:panelGrid columns="2" rowClasses="prop"
+							headerClass="login-header" columnClasses="name,value">
+							<f:facet name="header">
+								<h:outputText value="#{messages['login.here']}" />
+							</f:facet>
+							<h:outputLabel for="username">#{messages['login.username']}</h:outputLabel>
+							<h:inputText id="username" styleClass="login-field"
+								value="#{credentials.username}" />
+							<h:outputLabel for="password">#{messages['login.password']}</h:outputLabel>
+							<h:inputSecret id="password" styleClass="login-field"
+								value="#{credentials.password}" />
+
+							<h:outputLabel for="mandant"
+								rendered="#{loginBean.mandantenDropDownNeeded}">#{messages['login.mandant']}</h:outputLabel>
+							<h:selectOneMenu id="mandant" styleClass="login-field"
+								value="#{identity.sedexId}"
+								rendered="#{loginBean.mandantenDropDownNeeded}" >
+								<f:selectItems value="#{loginBean.mandanten}" />
+							</h:selectOneMenu>
+
+							<h:outputLabel for="rememberMe">#{messages['login.remember']}</h:outputLabel>
+							<h:selectBooleanCheckbox id="rememberMe"
+								value="#{identity.rememberMe}" />
+							<h:commandButton id="loginButton" value="#{messages['login.button']}"
+								action="#{identity.login}" />
+						</h:panelGrid>
+					</div>
+
+				</rich:panel>
+			</h:form>
+		</div>
+		<br class="clearBoth" />
+		<!--<ui:include src="layout/footer.xhtml" />-->
+
+	</div>
+</body>
+</html>

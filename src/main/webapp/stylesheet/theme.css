@@ -1,0 +1,792 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-size: 12px;
+    margin: 0px;
+    font-family: Arial,Verdana,sans-serif;
+}
+
+a img {
+    border: none;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 1.6em;
+    margin-top: 0;
+}
+
+input[type=submit], input[type=button] {
+    font-size: 10px;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+input[type=text], input[type=password], textarea {
+    font-size: 11px;
+    padding-left: 1px;
+}
+
+input[type=checkbox] {
+    margin-left: 0px;
+}
+
+.tableControl, .actionButtons {
+    width: 100%;
+}
+
+.tableControl a {
+    padding-left: 10px;
+}
+
+.tableControl {
+    text-align: right;
+}
+
+.footer {
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.rich-table {
+    width: 100%;
+}
+
+.body {
+    padding: 30px;
+}
+
+.columnHeader:hover {
+    color: #FF6600;
+}
+
+.message {
+    padding: 5px;
+    list-style: none;
+    border: 0;
+    background: none;
+    padding: 0;
+    color: #000000;
+    margin: 1px 0 1px 0;
+    font-size: 11px;
+}
+
+.message li {
+    background: no-repeat left center;
+    padding-top: 1px;
+    padding-left: 20px;
+    margin-left: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.message li.infomsg {
+    background-image: url(../img/msginfo.png);
+}
+
+.message li.errormsg {
+    background-image: url(../img/msgerror.png);
+    color: red;
+}
+
+.message li.warnmsg {
+    background-image: url(../img/msgwarn.png);
+}
+
+.messageErrorpage {
+    font-size: 12px;
+}
+
+.name {
+    vertical-align: top;
+    font-weight: normal;
+    width: 115px;
+    float: left;
+    margin-top: 3px;
+    clear: left;
+    font-size: 11px;
+}
+
+.name-table {
+    padding: 5px;
+}
+
+.value {
+    float: left;
+}
+
+.error {
+    float: left;
+    padding: 5px;
+    width: 150px;
+}
+
+div#composeForm\3A composeFormHeader span.error {
+    float: none;
+}
+
+div#composeForm\3A panel span.error {
+    float: none;
+}
+
+div#composeForm\:newBenefit > div > div.rich-panel {
+	clear:both !important;	
+	overflow:auto;
+	float:none;
+}
+
+.errors {
+    color: red;
+    vertical-align: middle;
+}
+
+img.errors {
+    padding-right: 5px;
+}
+
+.errors input, .errors textarea {
+    border: 1px solid red !important;
+}
+
+.required {
+    color: red;
+    padding-left: 2px;
+}
+
+.rich-stglpanel-body {
+    overflow: auto;
+}
+
+/* the specificity here is necessary to override the defaults */
+.rich-panel .rich-panel-header,
+.rich-stglpanel .rich-stglpanel-header {
+    padding: 2px 3px;
+}
+
+
+select {
+    font-size: 12px;
+}
+
+.rich-panel input[type=submit], .rich-panel input[type=button],
+.rich-tabpanel input[type=submit], .rich-tabpanel input[type=button] {
+    margin-bottom: 0;
+}
+
+.tableControl input[type=submit], .tableControl input[type=button], .tableControl select {
+    margin: 5px 0 5px 5px;
+}
+
+/* I don't know why this is necessary, but the select is off by a pixel on the top and is padding too much on the left */
+.tableControl select {
+    margin-left: 2px;
+    position: relative;
+    top: 1px;
+}
+
+.actionButtons {
+    padding-left: 1px;
+}
+
+.actionButtons select {
+    margin: 5px 5px 5px 0;
+    vertical-align: bottom;
+}
+
+.rich-datalist {
+    list-style: square;
+    margin: 6px 0 1px 0;
+    padding-left: 18px;
+}
+
+.rich-list-item {
+    padding-bottom: 4px;
+}
+
+div.info {
+    font-size: 1.2em;
+}
+
+ul.bullets {
+    list-style: square;
+}
+
+ul.bullets li {
+    padding-bottom: 2px;
+}
+
+td.action {
+    text-align: center;
+    width: 8em;
+    white-space: nowrap;
+}
+
+td.action a {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+/** sM-Client specific  classes **/
+
+/** Layout **/
+/** important overwrites are to fix IE6 limitations**/
+
+div#main {
+    width: 970px !important;
+    width: 100%;
+}
+
+div#body {
+    width: 970px !important;
+    width: 100%;
+}
+
+div#navigationmenu {
+    float: left;
+    width: 160px;
+    margin: 14px 10px 10px 10px;;
+}
+
+div#content {
+    float: left;
+    width: 770px !important;
+    width: 749px;
+    margin: 10px;
+}
+
+div#header {
+    width: 970px;
+}
+
+div#footer {
+    width: 970px;
+}
+/** Menu **/
+
+.third-level-nav{
+    font-size:9px;
+    padding-left: 15px;
+    border-top: none;
+}
+
+/** Header **/
+
+.left-toolbar-item {
+    float:left;
+    padding-left:10px;
+    font-weight:normal;
+}
+
+.right-toolbar-item-messages {
+    float:right;
+    padding-right:20px;
+    font-weight:normal;
+    margin-top:-2px;
+}
+
+
+.right-toolbar-item {
+    float:right;
+    padding-right:8px;
+    font-weight:bold;
+    color: #000000;
+}
+
+.right-toolbar-item a{
+    color: #000000;
+}
+
+.rich-toolbar-top {
+    padding:2px;
+    background-color:#BED6F8;
+    background-image:url(../img/rich_bg.png);
+    background-position:left top;
+    background-repeat:repeat-x;
+    border:1px solid #BED6F8;
+}
+
+.rich-toolbar-grey {
+    background-color:#CCCCCC;
+    padding:2px;
+}
+
+.rich-toolbar-header {
+    height: 17px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+
+.logo-header {
+    height:36px;
+    padding:0px;
+    background: white url(../img/bg_and_logo.png) repeat-y top right;
+}
+
+/** login **/
+
+.login-header {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.login-field{
+    width: 120px;
+}
+
+
+/** content **/
+
+.bold_text{
+    font-weight: bold;
+}
+
+.normal_text {
+    font-weight: normal;
+}
+
+.print-popup{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 120px;
+    left: 200px;
+}
+
+.sortable {
+    background-image:url("../img/sortable.gif");
+    background-position:center right;
+    background-repeat:no-repeat;
+    padding-right:12px;
+    cursor: pointer;
+}
+.sorted-up {
+    background-image:url("../img/sorted_up.gif");
+    background-position:center right;
+    background-repeat:no-repeat;
+    padding-right:12px;
+    cursor: pointer;
+}
+.sorted-down {
+    background-image:url("../img/sorted_down.gif");
+    background-position:center right;
+    background-repeat:no-repeat;
+    padding-right:12px;
+    cursor: pointer;
+}
+
+.nowrap {
+    white-space:nowrap;
+}
+
+.table-content {
+    width: 774px !important;
+    width: 748px;
+}
+
+.listmessages-first-column {
+    width: 19px;
+}
+
+.listmessages-second-column {
+    width: 56px;
+}
+
+.dr-toolbar-ext-nobg {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+}
+
+.detailshd-first-column {
+    width:250px;
+    background-color: #eee;
+}
+
+.detailshd-second-column {
+    width:506px;
+    background-color: #eee;
+}
+
+.msg-first-column {
+    width:250px;
+}
+
+.msg-second-column {
+    width:506px;
+}
+
+.node-level-2 {
+    text-indent: 25px;
+}
+
+.node-level-3 {
+    text-indent: 50px;
+}
+
+.node-level-4 {
+    text-indent: 75px;
+}
+
+.node-level-5 {
+    text-indent: 100px;
+}
+
+.node-level-6 {
+    text-indent: 125px;
+}
+
+.node-level-7 {
+    text-indent: 150px;
+}
+
+.node-level-8 {
+    text-indent: 175px;
+}
+
+.node-level-9 {
+    text-indent: 200px;
+}
+
+.rich-table-headercell{
+    text-align:left;
+}
+
+.rich-table-subheadercell{
+    text-align:left;
+}
+
+.short-input-field{
+    width:90px;
+}
+
+.align-bottom {
+    position: absolute;
+    bottom: 5px;
+}
+
+.status-drop-down {
+    width: 120px;
+}
+
+
+
+/** Footer **/
+
+.footer-bar {
+    border-top:1px solid #CCCCCC;
+    font-size: 10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.footer-bar a{
+    color: #86b5f8;
+}
+
+
+.clearBoth{
+    clear: both;
+}
+
+
+
+/** Form Service **/
+
+addressLabel {
+    padding-top: 3px;
+}
+
+#addressLabel input[type=button] {
+    font-size: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#addressLabel .name {
+    margin-top: 0;
+}
+
+#addressLabel .value {
+    width: 550px;
+}
+
+.composeFormHeader{
+    background-color: #eee;
+    padding-bottom: 5px;
+    margin-bottom: 4px;
+}
+
+.entry {
+    clear: both;
+    min-height: 22px;
+    margin-right: 30px;
+	overflow:auto;
+}
+
+.label{
+    min-width: 170px;
+    float:left;
+    white-space:nowrap;
+}
+
+#wizard\:oasiCommunication .label {
+    padding: 5px;
+}
+#wizard\:oasiCommunication .input {
+    padding-bottom: 5px;
+}
+
+#wizard\:faoCommunication .label {
+    padding: 5px;
+}
+#wizard\:faoCommunication .input {
+    padding-bottom: 5px;
+}
+
+#mutationListItems .input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#mutationListItems .label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.smaller .label{
+    min-width: 120px;
+    float:left;
+    white-space:nowrap;
+}
+
+div.person {
+    border-right: 1px double black;
+    margin-bottom: 8px;
+    width: 358px;
+}
+
+div#composeForm\3A composeFormBody > div > div.label {
+    font-weight: bold;
+    float: none;
+    margin-top: 8px;
+    margin-bottom: 7px;
+}
+
+.input{
+    float:left;
+}
+
+.toggle {
+    width: 25px;
+}
+
+div#composeForm\3A composeFormBody .toggle {
+    margin-top:-6px;
+    margin-bottom: 8px;
+}
+
+div#composeForm\3A composeFormBody .add-toggle {
+    margin-top:-22px;
+    position: absolute;
+}
+
+div#composeForm\3A composeFormBody .remove-toggle {
+    margin-top:-3px;
+    margin-bottom: 10px;
+}
+
+div#composeForm\3A composeFormBody .list-toggle {
+    margin-top:-1px;
+}
+
+div#composeForm\3A message_body .toggle {
+    margin-top:-6px;
+    margin-bottom: 8px;
+}
+
+div#composeForm\3A message_body .add-toggle {
+    margin-top:-22px;
+    position: absolute;
+}
+
+div#composeForm\3A message_body .remove-toggle {
+    margin-top:-3px;
+    margin-bottom: 10px;
+}
+
+div#composeForm\3A message_body .list-toggle {
+    margin-top:-1px;
+}
+
+.float-left{
+    float: left;
+}
+
+.attachment-table{
+    margin-left: 15px;
+    width: 380px;
+}
+
+div#composeForm\3A composeFormBody .error {
+    padding: 5px;
+    display: block;
+    width: 180px;
+    float: none;
+}
+
+#choiceError {
+    display: none;
+}
+
+/**
+ * Ausscheidungsbegehren
+ */
+
+.taxMunicipality {
+	width:100% !important;	
+}
+
+#wizard\:three > .entry > .input > div > div > div.label {
+	min-width:330px;
+}
+
+#wizard\3A localPersonIdPanel, #wizard\3A otherPersonIdPanel, #wizard\3A euPersonIdPanel, #wizard\3A taxMunicipalityPanel {
+	float:left;
+	width:380px;	
+	padding-bottom:10px;
+}
+
+.localPersonId, .otherPersonId, .euPersonId, #taxMunicipality, .id {
+	float:left;
+	clear:both;
+}
+
+.left {
+	float:left;
+}
+
+#dispersionDetails {
+	width:100%;
+	background-color:#CCCCCC;
+	height:40px;
+}
+
+#wizard\:four .label {
+	width:170px;
+	white-space:pre-line;
+}
+
+/**
+ * Vermoegensanfall
+ **/
+ 
+.vermoegensanfall_3 > div > div  > .label, .vermoegensanfall_3 > div > div > div > .label, .vermoegensanfall_3 > div > div > div > div > .label {
+	width: 270px;
+	white-space:normal;
+}
+
+
+/**
+ * Wegzugsmeldung
+ */
+ 
+#municipalityTable  {
+	width: 100%; 
+	border: 0pt none; 
+	border-spacing: 0pt;
+	margin-top:10px
+}
+
+#municipalityTable  td {
+	vertical-align:top;
+}
+
+#wizard\3A stateMunicipalityEarningTaxPanel, #wizard\3A federalEarningTaxPanel, 
+#wizard\3A stateMunicipalityAssetTaxPanel, #wizard\3A federalAssetTaxPanel {
+	margin-bottom: 10px;	
+}
+
+.wizard_wegzug_5 .label {
+	width:230px;
+	white-space:normal;
+}
+
+.wizard_wegzug_6 .label {
+	width:450px;
+	white-space:normal;
+}
+
+.municipalityDate {
+	margin-top:11px;
+}
+
+/*
+ * MWSt Rueckmeldung
+ */
+.mwst_rueckmeldung_1 .label {
+	width:200px;
+}
+
+.mwst_rueckmeldung_3 .label {
+	width:300px;
+}
+
+/** Rich Panel fix **/
+
+.rich-panel {
+    background-color:#FFFFFF;
+    border-color:#BED6F8;
+    border-style:solid;
+    border-width:1px;
+    padding:1px;
+}
+
+
+.rich-panel-header {
+    background-color:#BED6F8;
+    background-image:url(../img/rich_bg.png);
+    border-color:#BED6F8;
+    color:#000000;
+    font-family:Arial,Verdana,sans-serif;
+    font-size:11px;
+    font-weight:bold;
+}
+
+.noBorder {
+    border: none;
+}
+
+.ui-datepicker {
+    z-index:10100;
+}
+
+.two-cells{
+	width: 50%;
+}
+
+.pad-left{
+	padding-left: 20px;
+}
+
+#composeForm\3A benefitType0LegalBasisLaw {
+	width: 110px;
+}
+
+.no-pad-top {
+	padding-top: 0;
+}
+
+.no-pad-bottom {
+	padding-bottom: 0;
+}

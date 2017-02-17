@@ -1,0 +1,64 @@
+.cols {
+	vertical-align: top;
+}
+
+.outputPanel {
+	border: none;
+}
+
+.dr-pnl-b {
+	padding: 0px;
+}
+.entry {
+	clear: both;
+	padding-top: 10px;
+}
+.entry .label {
+	float: left;
+	padding-right: 5px;
+	font-weight: bold;
+	width: 150px;
+	text-align: right;
+}
+.entry .output {
+	float: right;
+	/* width: 360px; */
+	padding-top: 10px;
+	text-align: left;
+}
+.entry .input {
+	/* width: 360px; */
+	text-align: left;
+}
+.entry .error {
+	float: right;
+	/* width: 360px; */
+	text-align: left;
+}
+.errors {
+	font-size: small;
+	font-weight: bold;
+	text-align: center;
+	color: #600;
+}
+.errors div {
+	text-align: left;
+}
+.errors span {
+	text-align: left;
+}
+.errors input {
+	border: 1px solid #600;
+}
+.errors ul {
+	list-style: none;
+}
+.buttonBox {
+	text-align: center;
+	padding: 5px 0;
+	clear: both;
+}
+
+.bold_text{
+	font-weight: bold;
+}
