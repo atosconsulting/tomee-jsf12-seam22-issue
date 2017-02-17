@@ -3,7 +3,7 @@
 I experience an issue on TomEE 7.0.2 while trying to use application using JSF 1.2_12 and Seam 2.2.2.Final.
 It is likely that I did something incorrectly or didn't do something what I should.
 
-## There are few issues (they may be realted):
+## There are few issues (they may be related):
 ### (a)
 While opening the application root at http://localhost:8080/web3tomee-1.0-SNAPSHOT/ I see an empty page; page source is broken and looks as follows:
 ```html
