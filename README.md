@@ -1,4 +1,4 @@
-# Issue: TomEE + JSF 1.2 + Seam 2.2.3
+# Issue: TomEE 7.0.2 + JSF 1.2 + Seam 2.2.2
 
 I experience an issue on TomEE 7.0.2 while trying to use application using JSF 1.2_12 and Seam 2.2.2.Final.
 It is likely that I did something incorrectly or didn't do something what I should.
