@@ -1,6 +1,6 @@
-# Issue: TomEE 7.0.2 + JSF 1.2 + Seam 2.2.2
+# Issue: TomEE 7 + JSF (Mojarra) 1.2 + Seam 2.2.2
 
-I experience an issue on TomEE 7.0.2 while trying to use application using JSF 1.2_12 and Seam 2.2.2.Final.
+I experience an issue on TomEE (Plus and PluME) 7.0.2 while trying to use application using JSF (Mojarra) 1.2_12 and Seam 2.2.2.Final.
 It is likely that I did something incorrectly or didn't do something what I should.
 
 ## There are few issues (they may be related):
@@ -86,13 +86,17 @@ tomee-myfaces-7.0.2.jar
 ```
 
 ### (2)
-Add JSF 1.2_12 libs to $TOMEE_ROOT/lib:
+Add the following JSF 1.2 libs to $TOMEE_ROOT/lib:
 ```
+openwebbeans-jsf12-1.6.3.jar
+openwebbeans-el10-1.6.3.jar
 jsf-api-1.2_12.jar
 jsf-impl-1.2_12.jar
 ```
 
 from the following locations:
+- http://repo1.maven.org/maven2/org/apache/openwebbeans/openwebbeans-jsf12/1.6.3/openwebbeans-jsf12-1.6.3.jar
+- http://repo1.maven.org/maven2/org/apache/openwebbeans/openwebbeans-el10/1.6.3/openwebbeans-el10-1.6.3.jar
 - http://repo1.maven.org/maven2/javax/faces/jsf-api/1.2_12/jsf-api-1.2_12.jar
 - http://repo1.maven.org/maven2/javax/faces/jsf-impl/1.2_12/jsf-impl-1.2_12.jar
 
@@ -106,4 +110,4 @@ Copy the resulting `web3tomee-1.0-SNAPSHOT.war` to $TOMEE_ROOT/webapps for deplo
 Open URLs (a) and (b) mentioned on the beginning.
 
 
-I will be very glad for any suggestion what might be the reason of this issue.
+I will be very glad for any suggestion how to solve this issue.
